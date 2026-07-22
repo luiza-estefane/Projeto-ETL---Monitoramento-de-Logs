@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: dw_postgres
+    environment:
+      POSTGRES_DB: dw_logs
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  metabase:
+    image: metabase/metabase:latest
+    container_name: dw_metabase
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+  pentaho:
+    build: ./pentaho
+    container_name: etl_pentaho
+    ports:
+      - "6080:6080"
+    depends_on:
+      - postgres
+volumes:
+  pgdata:
