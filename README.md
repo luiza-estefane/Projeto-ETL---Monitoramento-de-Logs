@@ -18,16 +18,16 @@ A infraestrutura deste projeto está estruturada em formato de Containers (Docke
 
 Embora todo o desenvolvimento e finalização tenham sido executados nativamente em ambiente **Linux**. É possível executar todo o fluxo em outras OS **Windows** utilizando o Docker Desktop  e acionando o arquivo `Spoon.bat` do Pentaho PDI.
 
-## 🚀 Como Executar Localmente
+ Como Executar Localmente
 
-### Pré-requisitos
+ Pré-requisitos
 * Docker e Docker Compose instalados.
 * Python 3 e pacote `psycopg2-binary`.
 * Java (para rodar o Pentaho PDI).
-
-### Passo a Passo
-1. **Clone o repositório e configure as credenciais:**
+  
+ Passo a Passo
+1. Clone o repositório e configure as credenciais:
    * Crie um arquivo `.env` na raiz do projeto baseando-se no `.env.example`.
-2. **Suba a infraestrutura:**
+2. Suba a infraestrutura:
    ```bash
    docker-compose up -d
