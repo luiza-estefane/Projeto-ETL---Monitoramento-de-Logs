@@ -12,7 +12,7 @@ O fluxo dos dados foi estruturado em 4 etapas principais:
 3. Utilizando o Pentaho no processo de ETL para  aplicar as regras condicionais para identificação de alertas críticos e carregamento as informações nas tabelas finais.
 4. Conectado diretamente ao Database, construção de um painel de observabilidade dos logs, contendo indicadores de volume de dados e KPIs das quantidades de logs. 
 
-Para mais informações do projeto acesse a documentação do Projeto no Repositório. 
+Para mais informações do projeto acesse a documentação em pdf do Projeto no Repositório. 
 
 
 
