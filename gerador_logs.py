@@ -5,9 +5,8 @@ import os
 import time
 from dotenv import load_dotenv
 
-#====================================================
+
 # segurança 
-#====================================================
 
 load_dotenv()
 
@@ -23,9 +22,9 @@ try:
     cursor = related.cursor()
     print("Conexão com o Postgres realizada com sucesso!\n")
 
-    #====================================================
-    # 3. Geração de Logs Dinâmicos
-    #====================================================
+  
+    #  Geração de Logs Dinâmicos
+ 
     # Listas para simular o comportamento de um sistema 
     niveis_severidade = ["INFO", "WARNING", "ERROR"]
     mensagens_sistema = [
@@ -44,7 +43,6 @@ try:
     timestamp = datetime.now()
 
  
-    # 4. Inserção na Staging Area
  
     # Ajuste o nome da tabela (staging_logs) e colunas conforme o seu banco criado no Docker
     query_insercao = """
