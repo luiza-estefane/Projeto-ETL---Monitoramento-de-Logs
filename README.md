@@ -2,7 +2,7 @@ Monitoramento de Logs e Dasboard de observabilidade.
 
 Objetivo do Projeto
 
-Este projeto visa aprendizagem de ferramentas ETL desenhadado para simular, processar e monitorar logs de um sistema em tempo real. Capturando dados brutos, aplicando regras de separação por nível de severidade do Erro dos Logs e os disponibilizando em um 'Data Warehouse' para consumo de um dashboard interativo.
+Este projeto visa aprendizagem de ferramentas ETL desenhadado para simular, processar e monitorar logs de um sistema em tempo real. Capturando dados brutos, aplicando regras de separação por nível de severidade do Erro dos Logs e os disponibilizando  para consumo de um dashboard interativo.
 
 
 O fluxo dos dados foi estruturado em 4 etapas principais:
